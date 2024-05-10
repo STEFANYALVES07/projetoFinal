@@ -1,6 +1,6 @@
 import React from "react";
 
-//Stack Navigation
+//Stack Navigation TESTE COMMIT PELO VSCODE PROFESSOR
 import { NavigationContainer } from "@react-navigation/native"; //envolver a navegação da aplicação.
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
