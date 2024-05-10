@@ -264,7 +264,7 @@ export const styles = StyleSheet.create({
     fontSize: 25,
     bottom: 280,
     width: 370,
-    textAlign: "center",
+    textAlign: "justify",
   },
 
   txt6: {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { styles } from "../styles/StyleSheet";
 
@@ -10,37 +10,39 @@ export default function App() {
     { key: 3, sabor: "Açaí com frozen", valor: 45.0 },
   ];
 
-  const [selectedAcai, setSelectedAcai] = useState(Acais[0].key); // Inicia com o valor da primeira pizza
+  const [selectedAcai, setSelectedAcai] = useState(Acais[0].key);
 
   let AcaisItem = Acais.map((Acai, index) => (
-    <Picker.Item key={index} value={pizza.key} label={pizza.sabor} />
+    <Picker.Item key={index} value={Acai.key} label={Acai.sabor} />
   ));
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container2}>
+      <View style={styles.header}></View>
+      <Image style={styles.logo} source={require("../imagens/logo.jpeg")} />
+      <Text style={styles.title}>Escolha o tamanho do seu Açaí de 1L</Text>
       <Picker
-        selectedValue={selectedPizza}
-        onValueChange={(itemValue) => setSelectedPizza(itemValue)}
+        selectedValue={selectedAcai}
+        onValueChange={(itemValue) => setSelectedAcai(itemValue)}
         style={styles.picker}
         itemStyle={styles.pickerItem}
       >
-        {pizzasItem}
+        {AcaisItem}
       </Picker>
 
-      {/* Exibe detalhes da pizza selecionada se houver uma selecionada */}
-      {selectedPizza !== null ? (
+      {selectedAcai !== null ? (
         <Text style={styles.text}>
-          Pizza Selecionada:{" "}
+          Açaí Selecionada:{" "}
           <Text style={styles.textPizza}>
-            {pizzas.find((pizza) => pizza.key == selectedPizza).sabor}
+            {Acais.find((Acai) => Acai.key == selectedAcai).sabor}
           </Text>
           {" - "}
           <Text style={styles.textPrice}>
-            R$ {pizzas.find((pizza) => pizza.key == selectedPizza).valor}
+            R$ {Acais.find((Acai) => Acai.key == selectedAcai).valor}
           </Text>
         </Text>
       ) : (
-        <Text style={styles.text}>Pizza Selecionada: {" - "}</Text>
+        <Text style={styles.text}>Açaí Selecionado: {" - "}</Text>
       )}
     </View>
   );

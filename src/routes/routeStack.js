@@ -15,11 +15,27 @@ import Acaiumlitro from "../pages/Acaiumlitro";
 
 export default function RouteStack() {
   return (
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
-        <Stack.Screen name="Copo" component={Copo} />
-        <Stack.Screen name="Tigela" component={Tigela} />
-        <Stack.Screen name="Acaiumlitro" component={Acaiumlitro} />
-      </Stack.Navigator>
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Copo"
+        component={Copo}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Tigela"
+        component={Tigela}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Acaiumlitro"
+        component={Acaiumlitro}
+        options={{ headerShown: false }}
+      />
+    </Stack.Navigator>
   );
 }

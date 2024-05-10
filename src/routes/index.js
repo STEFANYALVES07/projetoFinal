@@ -36,8 +36,6 @@ export default function Routes() {
           shadowOpacity: 0.3,
           shadowRadius: 4.65,
           elevation: 8,
-          justifyContent: "space-around", // Centraliza os ícones
-          alignItems: "center", // Alinha os ícones verticalmente ao centro
         },
       }}
     >
