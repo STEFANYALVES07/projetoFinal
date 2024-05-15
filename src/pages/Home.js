@@ -47,7 +47,7 @@ export default function Home() {
           styletxt={styles.entrega}
           txt="Entrega: 40 min - 1h               Retirada: 30min"
         />
-
+        <Text>teste</Text>
         <Carousel
           data={data}
           renderItem={CarouselCardItem}
