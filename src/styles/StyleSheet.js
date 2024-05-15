@@ -10,8 +10,8 @@ export const styles = StyleSheet.create({
   container2: {
     flex: 1,
     backgroundColor: "#e6dfeb",
-    alignContent: "center",
     alignItems: "center",
+    alignContent: "center",
   },
   logo: {
     borderRadius: 100,
@@ -234,13 +234,14 @@ export const styles = StyleSheet.create({
     fontSize: 25,
     top: 30,
     fontFamily: "Didot",
+    fontWeight: "bold",
   },
 
   txt2: {
     borderRadius: 2,
     top: 50,
     width: 300,
-    fontSize: 15,
+    fontSize: 16,
     textAlign: "center",
   },
 
@@ -248,15 +249,16 @@ export const styles = StyleSheet.create({
     color: "#6e07ad",
     fontSize: 25,
     bottom: 120,
+    fontFamily: "Didot",
+    fontWeight: "bold",
   },
 
   txt4: {
     borderRadius: 2,
     width: 300,
-    fontSize: 15,
+    fontSize: 16,
     textAlign: "center",
     bottom: 320,
-    fontFamily: "Cochin",
   },
 
   txt5: {
@@ -265,12 +267,14 @@ export const styles = StyleSheet.create({
     bottom: 280,
     width: 370,
     textAlign: "justify",
+    fontFamily: "Didot",
+    fontWeight: "bold",
   },
 
   txt6: {
     borderRadius: 2,
     width: 300,
-    fontSize: 15,
+    fontSize: 16,
     textAlign: "center",
     bottom: 270,
   },

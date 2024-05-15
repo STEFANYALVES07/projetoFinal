@@ -34,11 +34,19 @@ export default function Contato() {
             alignItems: "center",
           }}
         >
-          <Text style={{ fontSize: 22, color: "purple", fontWeight: 700 }}>
+          <Text
+            style={{
+              fontSize: 22,
+              color: "purple",
+              fontWeight: 700,
+              fontFamily: "Didot",
+              fontSize: 60,
+            }}
+          >
             {" "}
             Quem Somos?
           </Text>
-          <Text style={{ fontSize: 28, width: 300, top: 10 }}>
+          <Text style={{ fontSize: 25, width: 300, top: 10 }}>
             Entenda como e por que Açaí Jam's se transformou em uma franquia de
             sucesso
           </Text>
@@ -111,6 +119,18 @@ export default function Contato() {
           source={image2}
         />
 
+        <View
+          style={{
+            padding: 10,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <TxtComponents
+            styletxt={styles.txt5}
+            txt="Visão: Açaí Como Estilo de Vidas"
+          />
+        </View>
         <View
           style={{
             padding: 10,

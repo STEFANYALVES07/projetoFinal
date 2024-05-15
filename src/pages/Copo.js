@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { styles } from "../styles/StyleSheet";
+
+import AntDesign from "@expo/vector-icons/AntDesign";
 
 export default function Copo() {
   {
@@ -200,6 +202,29 @@ export default function Copo() {
       ) : (
         <Text style={styles.selecionado}>Pizza Selecionada: </Text>
       )}
+
+      <TouchableOpacity
+        style={{
+          backgroundColor: "#6e07ad",
+          width: 200,
+          padding: 5,
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 2,
+        }}
+      >
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-beetwen",
+            alignItems: "center",
+            flex: 1,
+          }}
+        >
+          <AntDesign name="shoppingcart" size={24} color="white" />
+          <Text style={{ color: "white" }}> Adicionar ao carrinho</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 }

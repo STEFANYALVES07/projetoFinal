@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { styles } from "../styles/StyleSheet";
+
+import AntDesign from "@expo/vector-icons/AntDesign";
 
 export default function App() {
   const Acais = [
@@ -29,10 +31,9 @@ export default function App() {
       >
         {AcaisItem}
       </Picker>
-
       {selectedAcai !== null ? (
         <Text style={styles.text}>
-          Açaí Selecionada:{" "}
+          Açaí Selecionado:{" "}
           <Text style={styles.textPizza}>
             {Acais.find((Acai) => Acai.key == selectedAcai).sabor}
           </Text>
@@ -44,6 +45,29 @@ export default function App() {
       ) : (
         <Text style={styles.text}>Açaí Selecionado: {" - "}</Text>
       )}
+
+      <TouchableOpacity
+        style={{
+          backgroundColor: "#6e07ad",
+          width: 200,
+          padding: 5,
+          alignItems: "center",
+          justifyContent: "center",
+          borderRadius: 2,
+        }}
+      >
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-beetwen",
+            alignItems: "center",
+            flex: 1,
+          }}
+        >
+          <AntDesign name="shoppingcart" size={24} color="white" />
+          <Text style={{ color: "white" }}> Adicionar ao carrinho</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 }

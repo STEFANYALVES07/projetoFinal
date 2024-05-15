@@ -19,6 +19,14 @@ const data = [
     imgUrl:
       "https://i.pinimg.com/236x/11/16/d8/1116d87a6748a03df56009fd8f20c102.jpg",
   },
+  {
+    imgUrl:
+      "https://www.sambazon.com.br/cdn/shop/articles/PB_Acai_Bowl_4_08adbf7e-1c48-4214-8891-854e8c72971b_1100x.jpg?v=1660670481",
+  },
+  {
+    imgUrl:
+      "https://static.ifood-static.com.br/image/upload/t_high/pratos/722e7d6b-d66c-4de3-8778-0e18e160c9df/202201291702_26NC_i.jpg",
+  },
 ];
 
 function CarouselCardItem({ item }) {
@@ -47,7 +55,6 @@ export default function Home() {
           styletxt={styles.entrega}
           txt="Entrega: 40 min - 1h               Retirada: 30min"
         />
-        <Text>teste</Text>
         <Carousel
           data={data}
           renderItem={CarouselCardItem}
