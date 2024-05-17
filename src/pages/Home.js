@@ -46,7 +46,9 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}></View>
+      <View style={styles.header}>
+        <Image style={styles.fundo} source={require("../imagens/fundo.jpeg")} />
+      </View>
       <Image style={styles.logo} source={require("../imagens/logo.jpeg")} />
 
       <TxtComponents styletxt={styles.txt} txt="Jam's Açaí" />

@@ -76,26 +76,11 @@ export const styles = StyleSheet.create({
     marginVertical: 10,
     borderColor: "#cba9d6",
   },
-  Modal1: {
-    backgroundColor: "#e6dfeb",
-    flex: 1,
-  },
-
-  texto: {
-    fontSize: 50,
-    textAlign: "center",
-    top: 50,
-  },
-
-  textovoltar: {
-    fontSize: 30,
-    color: "white",
-  },
 
   dia: {
     fontSize: 20,
     textAlign: "center",
-    borderColor: "gray",
+    borderBottomColor: "gray",
     borderWidth: 0.5,
   },
 
@@ -200,27 +185,15 @@ export const styles = StyleSheet.create({
     top: 35,
     fontWeight: "bold",
   },
-  titlemap: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20,
-    top: 20,
-  },
-  mapContainer: {
-    width: "100%",
-    height: 300,
-    borderRadius: 10,
-    overflow: "hidden",
-    marginBottom: 20,
-  },
   mapImage: {
-    width: "100%",
-    height: "100%",
     resizeMode: "cover",
+    borderRadius: 1000,
+    top: 30,
   },
   end: {
     fontSize: 15,
-    color: "blue",
+    color: "purple",
+    top: 40,
   },
 
   Qs: {
@@ -277,5 +250,11 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: "center",
     bottom: 270,
+  },
+
+  fundo: {
+    height: "100%",
+    width: "100%",
+    opacity: 0.5,
   },
 });

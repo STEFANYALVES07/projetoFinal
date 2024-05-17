@@ -10,18 +10,12 @@ export default function Localizacao() {
 
   return (
     <View style={styles.container2}>
-      <View style={styles.header}></View>
-      <Image style={styles.logo} source={require("../imagens/logo.jpeg")} />
-      <Text style={styles.titlemap}>Localização</Text>
-      <View style={styles.mapContainer}>
-        <TouchableOpacity onPress={handleAddressPress}>
-          <Image
-            source={require("../imagens/Mapa.png")}
-            style={styles.mapImage}
-            resizeMode="contain"
-          />
-        </TouchableOpacity>
+      <View style={styles.header}>
+        <Image style={styles.fundo} source={require("../imagens/fundo.jpg")} />
       </View>
+      <Image style={styles.logo} source={require("../imagens/logo.jpeg")} />
+      <Text style={styles.txt}>Localização</Text>
+      <Image style={styles.mapImage} source={require("../imagens/Mapa.png")} />
       <TouchableOpacity onPress={handleAddressPress}>
         <Text style={styles.end}>
           Endereço: SESI 436 - R. dos Jacarandás, 100 - Jardim das Palmeiras,

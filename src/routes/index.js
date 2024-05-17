@@ -25,17 +25,25 @@ export default function Routes() {
         tabBarActiveTintColor: "purple",
         tabBarInactiveTintColor: "black",
         tabBarStyle: {
-          backgroundColor: "#e6dfeb",
+          backgroundColor: "white",
           borderTopColor: "transparent",
           padding: 5,
-          shadowColor: "purple",
+          bottom: 20,
+          right: 15,
+          left: 15,
+          position: "absolute",
+          shadowColor: "purple0",
+          borderRadius: 15,
+          shadowRadius: 7,
           shadowOffset: {
             width: 0,
-            height: 4,
+            height: 10,
           },
           shadowOpacity: 0.3,
           shadowRadius: 4.65,
           elevation: 8,
+          alignItems: "center",
+          alignContent: "center",
         },
       }}
     >

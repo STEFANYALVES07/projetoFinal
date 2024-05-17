@@ -16,11 +16,10 @@ export default function Horarios() {
   const rdItem = ({ item }) => (
     <View>
       <Text style={styles.dia}>{item.text}</Text>
-      <Text style={styles.dia}>{item.hora}</Text>
     </View>
   );
   return (
-    <View style={styles.Modal1}>
+    <View>
       <View style={styles.header2}></View>
       <FlatList
         data={horarios}
